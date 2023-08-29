@@ -1,10 +1,10 @@
-# Memory in JavaScript
+# Memory in JavaScript 🤔
 
 *Các ngôn ngữ khác (VD như C) có các nguyên hàm quản lí bộ nhớ cấp thấp như `malloc()` , `free()` <br>
 JS cấp phát bộ nhớ khi mọi thứ (đối tượng, chuỗi.. ) được tạo ra và tự động giải phóng bộ nhớ khi chúng không dùng nữa -> quá trình như vậy gọi là `garbage collection`<br>
 Kể cả khi làm việc với các ngôn ngữ bậc cao thì các nhà phát triển cũng nên tìm hiểu về quản lí bộ nhớ (dù đang là quản lí bộ nhớ tự động*
 
-## Bộ nhớ là gì ?
+## Bộ nhớ là gì ? 🤷‍♀️
 Ở cấp độ phần cứng, bộ nhớ máy tính gồm 1 lượng lớn các **flip flop**. Mỗi flip flop chứa 1 vài bóng bán dẫn có khả nắng lưu trữ 1 bit (được đánh địa chỉ bằng 1 mã định danh)
 
 Những thứ được lưu trữ trong bộ nhớ 
@@ -15,13 +15,13 @@ Khi `trình biên dịch` và `hệ điều hành (chương trình)` phối hợ
 
 Khi biên dịch mã, `trình biên dịch` sẽ kiểm tra dữ liệu nguyên thuỷ và tính toán số lượng bộ nhớ cần thiết và sữ được cấp phát trong `chương trình` trong không gian `call stack` (không gian mà các biến được cấp phát - không gian ngăn xếp vì khi có hàm được gọi bộ nhớ của chúng sẽ được thêm vào trên bộ nhớ hiện có và khi kết thúc sẽ xoá theo thứ tự LIFO )
 
-## Vòng đời bộ nhớ 
+## Vòng đời bộ nhớ 🏝️
 Allocate -> Use -> Release 
 1. Cấp phát: Bộ nhớ được cấp phát bởi hệ điều hành -> cho phép các chương trình sử dụng (tự động bởi ngôn ngữ bậc cao)
 2. Sử dụng: Các hoạt động đọc và ghi diễn ra khi các biến được sử dụng
 3. Giải phóng: Khi không còn dùng đến nữa
 
-## Cấp phát động 
+## Cấp phát động ✨
 Thật không may, khi tại thời điểm biên dịch chúng ta không biết 1 biến cần bao nhiêu bộ nhớ
 
 Do đó không thể cấp phát bộ nhớ biến cho ngăn xếp ngay được, thay vào đó bộ nhớ được gán từ `heap` space -> cấp phát động 
