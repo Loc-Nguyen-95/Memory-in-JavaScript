@@ -1,9 +1,7 @@
 # Memory in JavaScript
 
-*Các ngông ngữ khác (VD như C) có các nguyên hàm quản lí bộ nhớ cấp thấp như `malloc()` , `free()`
-
+*Các ngôn ngữ khác (VD như C) có các nguyên hàm quản lí bộ nhớ cấp thấp như `malloc()` , `free()`
 JS cấp phát bộ nhớ khi mọi thứ (đối tượng, chuỗi.. ) được tạo ra và tự động giải phóng bộ nhớ khi chúng không dùng nữa -> quá trình như vậy gọi là `garbage collection`
-
 Kể cả khi làm việc với các ngôn ngữ bậc cao thì các nhà phát triển cũng nên tìm hiểu về quản lí bộ nhớ (dù đang là quản lí bộ nhớ tự động*
 
 ## Bộ nhớ là gì ?
